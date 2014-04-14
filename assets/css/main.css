@@ -1,0 +1,129 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,700|Noto+Serif:400,700,400italic&subset=latin,vietnamese);
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Verdana, Tahoma, sans;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links */
+a, a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+header {
+    background: transparent url(../img/background.jpg) center center no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+.scroll.down {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    padding: 20px;
+}
+
+.marginless.icon {
+    margin: 0;
+}
+
+.ui.transparent.menu {
+    background-color: transparent;
+    border: none;
+
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.ui.semitransparent.menu {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.ui.navbar.menu {
+    font-weight: 300;
+}
+
+.ui.navbar.menu .brand.item {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+}
+
+.ui.navbar.menu .item {
+    border: 0;
+    box-shadow: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 30px 25px;
+}
+
+.ui.monospace.header {
+    font-family: "Source Code Pro", "Ubuntu Mono", monospace;
+}
+
+.ui.navbar.menu .brand.item {
+    padding: 10px 20px;
+}
+
+.ui.navbar.menu .item:before {
+    width: 0;
+}
+
+.ui.navbar.menu .active.item,
+.ui.navbar.menu .item:hover {
+    background-color: rgba(0, 0, 0, .04);
+}
+
+.ui.navbar.menu .brand.item:hover {
+    background: none;
+}
+
+.ui.white.header {
+    color: #fff;
+}
+
+.ui.fixed.menu+.ui.news.grid {
+    padding-top: 100px;
+}
+
+
+.main {
+    margin-top: 100px;
+}
+
+.ui.boxed.header {
+    font-weight: 300;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.ui.article.list {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.ui.article.list a:hover {
+    border-bottom: 1px dashed #aaa;
+    margin-bottom: -1px;
+}
+
+.ui.fixed.menu+.ui.post.grid {
+    padding-top: 45%;
+}
+
+.article.column {
+    line-height: 250%;
+    font-family: "Noto Serif", sans-serif;
+}
+
+.fb-comments, .fb-comments iframe[style] {width: 100% !important;}
