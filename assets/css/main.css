@@ -134,15 +134,24 @@ header {
     margin-bottom: 20px;
 }
 
-@media (max-width: 767px) {
-  .ui.active.navbar.top.sidebar {
-    height: 100% !important;
-    margin-top: 63px !important;
-  }
+.ui.navbar.menu.transparent .right.menu .item{
+    padding: 22px 25px !important;
+}
 
+@media (max-width: 767px) {
+  .ui.fixed.menu.navbar {
+    margin-bottom: 0px !important;
+  }
   .ui.grid>.narrow.row {
     margin-top: 0;
     padding: 0;
   }
 
+}
+
+.ui.vertical.menu{
+    margin-top: 0px;
+    top: 62px;
+    position: relative;
+    display: none;
 }
