@@ -20,23 +20,88 @@
 <body>
 
     <header>
-        <nav class="ui fixed transparent menu navbar">
-            <a href="" class="brand item">
-                <h1 class="ui monospace header">{{ehkoo}}</h1>
-            </a>
+        <nav class="ui grid">
+            <div class="computer tablet only row">
+                <div class="ui fixed transparent menu navbar">
+                    <a href="" class="brand item">
+                        <h1 class="ui monospace header">{{ehkoo}}</h1>
+                    </a>
 
-            <div class="right menu">
-                <a href="" class="item">Trang Chủ</a>
-                <a href="" class="item">Lưu Trữ</a>
-                <a href="" class="item">Liên Hệ</a>
-                <a href="https://facebook.com/ehkoo" class="item" target="_blank"><i class="facebook icon"></i></a>
-                <a href="https://twitter.com/ehkoo" class="item" target="_blank"><i class="twitter icon"></i></a>
-                <a href="https://github.com/ehkoo" class="item" target="_blank"><i class="github icon"></i></a>
+                    <div class="right menu">
+                        <a href="" class="item">Trang Chủ</a>
+                        <a href="" class="item">Lưu Trữ</a>
+                        <a href="" class="item">Liên Hệ</a>
+                        <a href="https://facebook.com/ehkoo" class="item" target="_blank"><i class="facebook icon"></i></a>
+                        <a href="https://twitter.com/ehkoo" class="item" target="_blank"><i class="twitter icon"></i></a>
+                        <a href="https://github.com/ehkoo" class="item" target="_blank"><i class="github icon"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile only narrow row">
+                <div class="ui top sidebar vertical menu navbar">
+                    <a href="" class="item">Trang Chủ</a>
+                    <a href="" class="item">Lưu Trữ</a>
+                    <a href="" class="item">Liên Hệ</a>
+                    <a href="https://facebook.com/ehkoo" class="item" target="_blank">Facebook <i class="facebook large icon"></i></a>
+                    <a href="https://twitter.com/ehkoo" class="item" target="_blank">Twitter <i class="twitter large icon"></i></a>
+                    <a href="https://github.com/ehkoo" class="item" target="_blank">Github <i class="github large icon"></i></a>
+                </div>
+
+                <div class="ui fixed menu navbar">
+                    <a href="#" class="brand item">
+                        <h1 class="ui monospace header">{{ehkoo}}</h1>
+                    </a>
+
+                    <div class="right menu">
+                        <a href="#" class="menu item">
+                            <i class="reorder large icon"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </nav>
 
-        <section class="ui news page grid">
+        <section class="two column doubling ui news page grid">
             <div class="row">
+                <div class="column">
+                    <h2 class="ui boxed white header">Tin Tức</h2>
+                    <div class="ui article list">
+                        <a class="item">
+                            <i class="right triangle icon"></i>
+                            How do you know your dog likes you?
+                        </a>
+                        <a class="item">
+                            <i class="right triangle icon"></i>
+                            When is it ok to send your dog to a farm?
+                        </a>
+                        <a class="item">
+                            <i class="right triangle icon"></i>
+                            Can you get your dog back from a farm if you really want him back?
+                        </a>
+                        <a class="item">
+                            <i class="right triangle icon"></i>
+                            Is trespassing on a farm a misdemeanor offence?
+                        </a>
+                        <a class="item">
+                            <i class="right triangle icon"></i>
+                            How do you know your dog likes you?
+                        </a>
+                        <a class="item">
+                            <i class="right triangle icon"></i>
+                            When is it ok to send your dog to a farm?
+                        </a>
+                        <a class="item">
+                            <i class="right triangle icon"></i>
+                            Can you get your dog back from a farm if you really want him back?
+                        </a>
+                        <a class="item">
+                            <i class="right triangle icon"></i>
+                            Is trespassing on a farm a misdemeanor offence?
+                        </a>
+                    </div>
+                </div>
+
                 <div class="column">
                     <h2 class="ui boxed white header">Tin Tức</h2>
                     <div class="ui article list">
@@ -77,10 +142,13 @@
             </div>
         </section>
 
-        <div class="scroll down">
-            <a href="#"><i class="double angle down huge marginless icon"></i></a>
+        <div class="down wrapper">
+            <div class="scroll down">
+                <a href="#"><i class="double angle down huge marginless icon"></i></a>
+            </div>
         </div>
     </header>
+
 
     <main role="main" class="main">
         

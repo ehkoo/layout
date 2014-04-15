@@ -25,11 +25,12 @@ header {
     position: relative;
 }
 
+.down.wrapper {
+    position: absolute; left: 50%; bottom: 0;
+}
 .scroll.down {
-    position: absolute;
-    bottom: 0;
-    left: 45%;
-    padding: 20px;
+    position: relative;
+    left: -50%;
 }
 
 .marginless.icon {
@@ -50,6 +51,7 @@ header {
 
 .ui.navbar.menu {
     font-weight: 300;
+    width: 102%;
 }
 
 .ui.navbar.menu .brand.item {
@@ -63,7 +65,7 @@ header {
     box-shadow: none;
     text-transform: uppercase;
     font-size: 0.8rem;
-    padding: 30px 25px;
+    padding: 22px 30px;
 }
 
 .ui.monospace.header {
@@ -91,7 +93,7 @@ header {
     color: #fff;
 }
 
-.ui.fixed.menu+.ui.news.grid {
+.ui.grid+.ui.news.grid {
     padding-top: 100px;
 }
 
@@ -127,3 +129,20 @@ header {
 }
 
 .fb-comments, .fb-comments iframe[style] {width: 100% !important;}
+
+.column {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .ui.active.navbar.top.sidebar {
+    height: 100% !important;
+    margin-top: 63px !important;
+  }
+
+  .ui.grid>.narrow.row {
+    margin-top: 0;
+    padding: 0;
+  }
+
+}
