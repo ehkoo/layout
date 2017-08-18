@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.8.0/tachyons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700&amp;subset=vietnamese">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tự học lấy Haskell</title>
+  </head>
+  <body>
+    <header class="h3 bb b--light-gray flex items-center bg-white">
+      <h1 class="ma0 f5 fw7 w4 tc br b--light-gray h-100 flex items-center justify-center"><a href="#" class="no-underline ttu tracked dark-gray">Ehkoo</a></h1>
+      <ul class="list ml4">
+        <li class="dib mh3"><a href="#" class="tracked gray ttu fw3 f6 no-underline">Home</a></li>
+        <li class="dib mh3"><a href="#" class="tracked gray ttu fw3 f6 no-underline">Thing</a></li>
+        <li class="dib mh3"><a href="#" class="tracked gray ttu fw3 f6 no-underline">Stuff</a></li>
+        <li class="dib mh3"><a href="#" class="tracked gray ttu fw3 f6 no-underline">About</a></li>
+      </ul>
+    </header>
+
+    <main class="w-100">
+      <div class="mt3 flex w-100">
+        <aside class="w-25-l ph3 pv2">
+          <h1 class="f2 near-black">Tự học lấy Haskell</h1>
+          <ol class="list lh-copy">
+            <li><a class="db dark-red mb2" href="chapter.html">Giới thiệu</a></li>
+            <li><a class="db dark-red mb2" href="chapter.html">Xuất phát</a></li>
+            <li><a class="db dark-red mb2" href="chapter.html">Kiểu và lớp chứa kiểu</a></li>
+            <li><a class="db dark-red mb2" href="chapter.html">Cú pháp dùng trong hàm</a></li>
+            <li><a class="db dark-red mb2" href="chapter.html">Đệ quy</a></li>
+            <li><a class="db dark-red mb2" href="chapter.html">Hàm cấp cao</a></li>
+            <li><a class="db dark-red mb2" href="chapter.html">Module</a></li>
+            <li><a class="db dark-red mb2" href="chapter.html">Tự lập nên các kiểu và lớp riêng</a></li>
+            <li><a class="db dark-red mb2" href="chapter.html">Đầu vào và đầu ra</a></li>
+            <li><a class="db dark-red mb2" href="chapter.html">Giải bài toán theo phong cách lập trình hàm</a></li>
+            <li><a class="db dark-red mb2" href="chapter.html">Functor, Functor áp dụng, và Monoid</a></li>
+            <li><a class="db dark-red mb2" href="chapter.html">Một số vấn đề về Monad</a></li>
+            <li><a class="db dark-red mb2" href="chapter.html">Bổ sung về Monad</a></li>
+            <li><a class="db dark-red mb2" href="chapter.html">Khóa kéo</a></li>
+          </ol>
+        </aside>
+        <div class="w-75-l lh-copy dark-gray">
+          <div class="mw7 center">
+            <h1 class="f3 dark-red">Chương 1: Giới thiệu</h1>
+
+            <h2 class="f4 near-black">Về quyển hướng dẫn này…</h2>
+            <p class="mt3 mb4">Chào mừng bạn đến với Tự học lấy Haskell (“Learn you a Haskell for Great Good”)! Nếu bạn đang đọc dòng chữ này thì có khả năng là bạn muốn học Haskell. E hèm, bạn đã đến đúng chỗ rồi, nhưng trước hết ta hãy nói về cuốn sách hướng dẫn này đã.</p>
+
+            <p class="mt3 mb4">Tôi quyết định viết quyển sách này vì tôi muốn nắm vững kiến thức về Haskell và vì tôi nghĩ rằng tôi có thể giúp những người chưa biết gì về Haskell học ngôn ngữ này từ góc nhìn của cá nhân tôi. Vẫn còn khá ít sách hướng dẫn về Haskell trên mạng Internet. Khi tôi bắt đầu học Haskell, tôi không học từ một nguồn tài liệu duy nhất. Cách học của tôi là đọc vài quyển hướng dẫn khác nhau, cả các bài báo nữa, vì mỗi tài liệu giải thích theo cách riêng. Bằng việc đọc qua nhiều nguồn tài liệu, tôi đã có thể ghép những mảnh kiến thức lại và nội dung cuốn sách đột nhiên được hình thành. Vì vậy đây là một nỗ lực để bổ sung vào nguồn tài liệu học Haskell để bạn có thêm cơ hội tìm được nguồn tài liệu ưa thích.</p>
+
+            <p class="mt3 mb4">
+              <img src="https://i1.wp.com/s3.amazonaws.com/lyah/bird.png" alt="" class="fl mr2 mb2">
+              Cuốn sách hướng dẫn này chủ yếu dành cho những người đã có kinh nghiệm lập trình những ngôn ngữ mệnh lệnh (C, C++, Java, Python …) nhưng trước đây chưa dùng ngôn ngữ lập trình hàm (Haskell, ML, OCaml …). Dù vậy tôi vẫn dám cá với bạn rằng nếu bạn không chưa có kinh nghiệm lập trình gì đáng kể, một người thông minh như bạn vẫn có thể theo kịp nội dung và học được Haskell.
+            </p>
+            <p class="mt3 mb4">Kênh tin #haskell trên mạng freenode là một nơi tốt để bạn đặt câu hỏi mỗi khi bị bí trong lập trình. Mọi người ở đó đều tốt bụng, kiên nhẫn, và cảm thông đối với những người mới học.</p>
+            <p class="mt3 mb4">Trước khi nắm được Haskell tôi đã thất bại chừng 2 lần vì có vẻ như nó quá kì quặc đối với mình và tôi không hiểu được. Nhưng rồi một khi đã “vào guồng” và vượt qua rào cản ban đầu đó, mọi chuyện đều thuận buồn xuôi gió. Tôi đoán rằng điều tôi muốn nói sẽ là: Haskell thật thuyệt và nếu bạn quan tâm đến lập trình thì bạn thực sự nên học ngôn ngữ này ngay cả khi ban đầu nó có vẻ kì quặc. Học Haskell cũng rất giống với lần đầu học lập trình — thật là vui! Nó bắt bạn phải suy nghĩ khác đi, điều mà sẽ dẫn ta đến mục kế tiếp…</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+    </footer>
+  </body>
+</html>
